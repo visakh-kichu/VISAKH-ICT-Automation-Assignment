@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="VISAKH ICT AUTOMATION ASSIGNMENT AMAZON">
+        <parameter name="product" value="redmi"></parameter>
+        <parameter name="product_2" value="think like monk"></parameter>
+        <parameter name="username" value="+916238290713"></parameter>
+        <parameter name="password" value="skril$123"></parameter>
+        <parameter name="newPassword" value="dave123$$"></parameter>
+        <parameter name="validPincode" value="691512"></parameter>
+        <parameter name="invalidUsername" value="@##ffff"></parameter>
+        <parameter name="invalidPincode" value="kkkss334"></parameter>
+        <classes>
+            <class name="TestScripts.LoginTest"></class>
+            <class name="TestScripts.SearchProductsTest"></class>
+            <class name="TestScripts.SelectProductTest"></class>
+            <class name="TestScripts.CartOperationsTest"></class>
+            <class name="TestScripts.PincodeTest"></class>
+            <class name="TestScripts.AddAddressTest">
+                <parameter name="firstName" value="Steve"></parameter>
+                <parameter name="mobileNo" value="9946872202"></parameter>
+                <parameter name="validPincode" value="691511"></parameter>
+                <parameter name="houseNo" value="143"></parameter>
+                <parameter name="area" value="Punaloor"></parameter>
+                <parameter name="landMark" value="Near Hospital"></parameter>
+                <parameter name="town" value="Kottarakkara"></parameter>
+                <parameter name="state" value="Kerala"></parameter>
+            </class>
+            <class name="TestScripts.ChangePasswordTest"></class>
+            <class name="TestScripts.HamburgerMenuTest"></class>
+            <class name="TestScripts.FooterElementsTest"></class>
+            <class name="TestScripts.FilterOptionsTest"></class>
+        </classes>
+    </test>
+</suite>
